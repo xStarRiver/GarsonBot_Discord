@@ -1,0 +1,287 @@
+{
+  "gameId": 2,
+  "title": "Billy 燒脂大作戰",
+  "shortCode": "billy_scene_1",
+  "questionCount": 9,
+  "parameterCount": 3,
+  "parameter": [
+    {"index": 1, "name": "脂肪", "defaultStat": 50000, "type": "numbers"},
+    {"index": 2, "name": "腐能量 (開心值)", "defaultStat": 10000, "type": "numbers"},
+    {"index": 3, "name": "金錢", "defaultStat": 10000, "type": "numbers"}
+  ],
+  "questions": [
+    {
+      "questionNo": 1,
+      "questionTitle": "近期疫症流行, 很多香港人都買了 Switch 的 Ringfit 健身環做運動, 炒價愈來愈高",
+      "choice": [
+        {
+          "answer": "A. 捱炒價, 使用金錢 2000 購買入手",
+          "consequence": {
+            "nextQuestion": 2,
+            "reward": [
+              {"parameter": 3, "type": "subtract", "change": "2000"},
+              {"parameter": 1, "type": "subtract", "change": "10000"}
+            ]
+          }
+        },
+        {
+          "answer": "B. 寧死不買, 決定改為留在家中活動",
+          "consequence": {
+            "nextQuestion": 2,
+            "reward": [
+              {"parameter": 0, "message": "天氣寒冷令 Billy 昏昏欲睡, 減肥意志大減"},
+              {"parameter": 1, "type": "subtract", "change": "10000"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "questionNo": 2,
+      "questionTitle": "做完運動, 一如以往, Billy 感到非常肚餓, 他嘗試用手機叫外賣, 他",
+      "choice": [
+        {
+          "answer": "A. 用外賣apps叫食物",
+          "consequence": {
+            "nextQuestion": 3,
+            "reward": [
+              {"parameter": 0, "message": "Billy叫左好多野食, 大吃大喝"},
+              {"parameter": 3, "type": "subtract", "change": "2000"},
+              {"parameter": 1, "type": "add", "change": "10000"}
+            ]
+          }
+        },
+        {
+          "answer": "B. 瀏覽 YouTube 嘗試整杯面炒飯",
+          "consequence": {
+            "nextQuestion": 3,
+            "reward": [
+              {"parameter": 0, "message": "有把煮食過程拍下, YouTube 大受歡迎, 日拍夜拍"},
+              {"parameter": 3, "type": "add", "change": "1000"},
+              {"parameter": 1, "type": "subtract", "change": "10000"},
+              {"parameter": 0, "message": "但 Billy 因為拍攝過程因為太辛苦, 所以腐能量大減"},
+              {"parameter": 2, "type": "subtract", "change": "2000"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "questionNo": 3,
+      "questionTitle": "Billy 瀏覽連登討論區, 見到眾多連登仔推薦力威健身, 佢想",
+      "choice": [
+        {
+          "answer": "A. 親身上去查詢, 貫徹健身健心精神",
+          "consequence": {
+            "nextQuestion": 4,
+            "reward": [
+              {"parameter": 0, "message": "病毒肆虐, Billy 出街後感到身體不適"},
+              {"parameter": 2, "type": "subtract", "change": "2000"},
+              {"parameter": 1, "type": "subtract", "change": "10000"}
+            ]
+          }
+        },
+        {
+          "answer": "B. 喺YouTube search 健身科學家 - 胡力威教授 - 香港人體天然無藥物科研健身健心研究院入面留言查詢",
+          "consequence": {
+            "nextQuestion": 4,
+            "reward": [
+              {"parameter": 0, "message": "Billy 看影片後虎驅一震"},
+              {"parameter": 2, "type": "add", "change": "5000"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "questionNo": 4,
+      "questionTitle": "Billy無懼病毒, 去了健身室做Gym, 做完gym",
+      "choice": [
+        {
+          "answer": "A. 沖個靚涼, 焗桑拿途中, 比fans認出",
+          "consequence": {
+            "nextQuestion": 5,
+            "reward": [
+              {"parameter": 0, "message": "Billy 覺得非常開心, 但病毒肆虐, 患上感冒"},
+              {"parameter": 1, "type": "subtract", "change": "10000"},
+              {"parameter": 2, "type": "subtract", "change": "3000"}
+            ]
+          }
+        },
+        {
+          "answer": "B. 拿拿林返屋企沖涼",
+          "consequence": {
+            "nextQuestion": 5,
+            "reward": [
+              {"parameter": 0, "message": "Billy 再次感到不適"},
+              {"parameter": 2, "type": "subtract", "change": "2000"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "questionNo": 5,
+      "questionTitle": "有廣告商邀請Billy上遊船拍攝旅遊特輯, 由香港上船前往台灣, Billy決定搏一搏, 不虞有詐登船, 他選擇住",
+      "choice": [
+        {
+          "answer": "A. 一生人一次, 決定自己加錢住露台房, 食好住好",
+          "consequence": {
+            "nextQuestion": 6,
+            "reward": [
+              {"parameter": 0, "message": "船上面果然好食好住, Billy 不停大吃大喝"},
+              {"parameter": 3, "type": "subtract", "change": "5000"},
+              {"parameter": 1, "type": "subtract", "change": "5000"}
+            ]
+          }
+        },
+        {
+          "answer": "B. 入住廣告商安排的內艙房",
+          "consequence": {
+            "nextQuestion": 6,
+            "reward": [
+              {"parameter": 0, "message": "看著別人好食好住, 心生不憤"},
+              {"parameter": 2, "type": "subtract", "change": "3000"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "questionNo": 6,
+      "questionTitle": "Billy前往游泳池、電影院、健身房到處遊覽, 發現周遭也都有很多大媽級遊客載歌載舞, 不時聽見有人大聲咳嗽, 因為環境過於嘈雜, 他周圍亂行, 行到去一間辟靜房間, 推開門後, 他發現有一個人望住一部沒有開啟的電視, 一動也不動, 他決定",
+      "choice": [
+        {
+          "answer": "A. 行過去望下佢",
+          "consequence": {
+            "nextQuestion": 7,
+            "reward": [
+              {"parameter": 0, "message": "那個人突然跌倒在地上嘔血, Billy 即時感染病毒"},
+              {"parameter": 2, "type": "subtract", "change": "1000"}
+            ]
+          }
+        },
+        {
+          "answer": "B. 返轉頭繼續同大媽唱K",
+          "consequence": {
+            "nextQuestion": 7,
+            "reward": [
+              {"parameter": 0, "message": "Billy 同大媽唱K導致筋疲力盡"},
+              {"parameter": 1, "type": "subtract", "change": "10000"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "questionNo": 7,
+      "questionTitle": "稍事休息, Billy前往電影院, 有兩套電影可選, 他選擇",
+      "choice": [
+        {
+          "answer": "A. 奧斯卡得獎電影『上流寄生族』",
+          "consequence": {
+            "nextQuestion": 8,
+            "reward": [
+              {"parameter": 0, "message": "Billy 看完電影之後, 心情非常沉重"},
+              {"parameter": 1, "type": "subtract", "change": "15000"}
+            ]
+          }
+        },
+        {
+          "answer": "B. 輕鬆下睇港產片『肥龍過江』",
+          "consequence": {
+            "nextQuestion": 8,
+            "reward": [
+              {"parameter": 0, "message": "Billy 看完電影之後, 心情變得輕鬆, 效法甄子丹跑來跑去, 同打十個"},
+              {"parameter": 1, "type": "subtract", "change": "10000"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "questionNo": 8,
+      "questionTitle": "船上突然爆發疫症, Billy 慘遭隔離在房中, 他有一次機會聯絡香港的人求助打算",
+      "choice": [
+        {
+          "answer": "A. 聯絡台灣人妻CoCoCherry, 嘗試扮台灣人包機去台灣",
+          "consequence": {
+            "nextQuestion": 9,
+            "reward": [
+              {"parameter": 2, "type": "add", "change": "5000"},
+              {"parameter": 3, "type": "subtract", "change": "1000"}
+            ]
+          }
+        },
+        {
+          "answer": "B. 聯絡香港 YouTube 紅人 大J 尋求幫助",
+          "consequence": {
+            "nextQuestion": 9,
+            "reward": [
+              {"parameter": 2, "type": "subtract", "change": "2000"},
+              {"parameter": 3, "type": "subtract", "change": "4000"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "questionNo": 9,
+      "questionTitle": "因政策影響, 一時未能落船, 為打發時間, Billy決定",
+      "choice": [
+        {
+          "answer": "A. 從網上訂購紅酒, 歎一歎享受人生, 將疫情感想用朗誦形式上載至 YouTube ",
+          "consequence": {
+            "nextQuestion": 9999,
+            "reward": [
+              {"parameter": 0, "message": "Billy 發展自己感性的一面, 並發展內在潛能, 將朗誦既能力無限增強, 大感自豪"},
+              {"parameter": 2, "type": "add", "change": "10000"}
+            ]
+          }
+        },
+        {
+          "answer": "B. 每日瘋狂健身, 用超越地球人想像既艱苦, 比D掙扎正式成為健身達人",
+          "consequence": {
+            "nextQuestion": 9999,
+            "reward": [
+              {"parameter": 1, "type": "subtract", "change": "20000"},
+              {"parameter": 2, "type": "add", "change": "10000"}
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "winningCondition": [
+    {"parameter": 1, "value": 10000, "type": "number", "action": "equal_or_less"}
+  ],
+  "losingCondition": [
+    {"parameter": 1, "value": 0, "type": "number", "action": "less", "sentences": ["no_fat"], "checkWhen": "every_round"},
+    {"parameter": 2, "value": 0, "type": "number", "action": "less", "sentences": ["no_happy"], "checkWhen": "every_round"},
+    {"parameter": 3, "value": 0, "type": "number", "action": "less", "sentences": ["no_money"], "checkWhen": "every_round"}
+  ],
+  "gameMessage": {
+    "gameStart": [
+      {"type": "message", "content":"Billy 最近又諗起自己要做一個健康的人, 所以又開始自己的減肥大計了。你可以幫助到Billy, 解決他在減肥的時候預到的問題, 成功消脂嗎?"},
+      {"type": "message", "content":"遊戲玩法:"},
+      {"type": "message", "content":"一開始 Billy 擁有「脂肪」50000, 「腐能量」(開心值) 10000, 「金錢」10000"},
+      {"type": "message", "content":"「腐能量」和「金錢」變成 0 就計劃失敗, 9條問題後, 擁有的「脂肪」為 10000 或以下為勝出, 「脂肪」為負數可能會計劃失敗"}
+    ],
+    "reachEnd": [
+      {"type": "message", "content":"因為要離開疫船, 政府幫Billy檢查身體, 發現他的脂肪, 腐能量和金錢為以下"},
+      {"type": "message", "content":"正在檢查Billy的數據..."}
+    ],
+    "winning": [
+      {"type": "message", "content":"恭喜你贏出遊戲!"}
+    ],
+    "losing": [
+      {"name": "no_fat", "type": "message", "content":"噢! Billy太勤力減肥, 脂肪值太低, 一陣風就吹走左Billy, 「Game Over」(解: 脂肪跌至負數)"},
+      {"name": "no_happy", "type": "message", "content":"噢! Billy雖然非常努力減肥, 但係減肥實在太不開心了, 所以他減肥失敗, 「Game Over」(解: 開心值不足)"},
+      {"name": "no_money", "type": "message", "content":"噢! Billy用了太多金錢減肥, 資金不足, 無法繼續減肥大計了, 「Game Over」(解: 金錢不足)"}
+    ]
+  },
+  "announcement": {
+    "winning": "$player$ 完成了「Billy 燒脂大作戰」，並成功幫到 Billy 成功減肥燒脂了! Congratulations!",
+    "losing": "噢! $player$ 在「Billy 燒脂大作戰」，令Billy減肥燒脂失敗, Billy要繼續做一個肥仔了!"
+  }
+}
